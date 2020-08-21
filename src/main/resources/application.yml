@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: mnHelloJava
+  server:
+    port: 8081
+  security:
+    enabled: true
+    oauth2:
+      clients:
+        keycloak:
+          client-id: login-app
+          client-secret: c5e7c01c-0d82-449b-b84f-e6ce944c11a7
+          openid:
+            issuer: http://localhost:9081/auth/realms/mn-realm
